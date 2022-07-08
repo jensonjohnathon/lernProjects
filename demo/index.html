@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>Call Multiple JavaScript Functions on Click of a Button</p>
+    <button type="button" id="submit" onclick="displayMessage()">Click Me</button>
+    <input type="text" id="todoText">
+    <p id="msg"></p>
+    <script>
+        function displayMessage(){
+            let list = document.getElementById("todoList");
+            function getInputValue(){
+                var inputVal = document.getElementById("todoText").value;
+                data.forEach((inputVal)=>{
+                    let li = document.createElement("li");
+                    li.innerText = inputVal;
+                    list.appendChild(li);
+                })
+            };
+        }
+    </script>
+    <ul id="todoList"></ul>
+</body>
+</html>
