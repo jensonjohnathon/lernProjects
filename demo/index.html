@@ -9,23 +9,21 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <p>Call Multiple JavaScript Functions on Click of a Button</p>
-    <button type="button" id="submit" onclick="displayMessage()">Click Me</button>
-    <input type="text" id="todoText">
-    <p id="msg"></p>
+    <input type='text' id='user_input' />
+    <input type="button" id="add" value="Add New">
+    <ol id="list_item">
+
+    </ol>
+
     <script>
-        function displayMessage(){
-            let list = document.getElementById("todoList");
-            function getInputValue(){
-                var inputVal = document.getElementById("todoText").value;
-                data.forEach((inputVal)=>{
-                    let li = document.createElement("li");
-                    li.innerText = inputVal;
-                    list.appendChild(li);
-                })
-            };
+        document.getElementById("add").onclick  = function() {
+
+            var node = document.createElement("Li");
+            var text = document.getElementById("user_input").value; 
+            var textnode=document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById("list_item").appendChild(node);
         }
     </script>
-    <ul id="todoList"></ul>
 </body>
 </html>
