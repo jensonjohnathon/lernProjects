@@ -22,6 +22,25 @@
             var text = document.getElementById("user_input").value; 
             var textnode=document.createTextNode(text);
             node.appendChild(textnode);
+            //new Code
+
+            //checkbox code
+            var checkbox = document.createElement('input'); // creates the checkbox this checkbox will be used to delete the todo item from the list of todo items
+            //assigning attributes to the checkbox
+            checkbox.type = "checkbox";
+            checkbox.name = "name";
+            checkbox.value = "value";
+            checkbox.id = "id";
+            //checkbox code end
+            // to tell the user what the checkbox is for a label with clarification text will be created
+            var label = document.createElement('label'); // label for the checkbox for clarification
+            label.htmlFor = "id"; // label attribute
+            label.appendChild(document.createTextNode('Delete'));
+            //adding both to the List element
+            node.appendChild(checkbox);
+            node.appendChild(label);
+
+            //new Code end
             document.getElementById("list_item").appendChild(node);
         }
     </script>
