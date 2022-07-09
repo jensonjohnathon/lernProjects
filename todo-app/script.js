@@ -1,12 +1,7 @@
-let list = document.getElementById("todoList");
-
-function getInputValue(){
-    // Selecting the input element and get its value 
-
-    var inputVal = document.getElementById("todoText").value;
-    data.forEach((inputVal)=>{
-        let li = document.createElement("li");
-        li.innerText = inputVal;
-        list.appendChild(li);
-      })
+document.getElementById("add").onclick  = function() {
+    var node = document.createElement("Li");
+    var text = document.getElementById("todoInput").value; 
+    var textnode=document.createTextNode(text);
+    node.appendChild(textnode);
+    document.getElementById("list_item").appendChild(node);
 }

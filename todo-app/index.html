@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div>
         <center><h1>Todo List</h1></center>
-        <input type="text" id="todoText" name="todoText">
-        <button type="button" onclick="getInputValue();">Add Todo Item</button>
+        <input type='text' id='todoInput' />
+        <input type="button" id="add" value="Add New" onclick="addTodo()">
+        <ol id="list_item">
     </div>
-    <div>
-        <ul id="todoList">
-        </ul>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
