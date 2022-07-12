@@ -2,7 +2,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const monthsAbridged = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-window.setInterval('getTime()', 10000);
+window.setInterval('getTime()', 1000);
 
 function getTime () {
     const d = new Date();
