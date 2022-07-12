@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    display: inline-block;
+}
+
+div {
+    font-size: larger;
+}
+
+#clock {
+    font-size: 45px;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(38, 0, 255);
+  }
