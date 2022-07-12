@@ -32,7 +32,6 @@ document.getElementById("add").onclick  = function() {  //Event listener for the
 
 document.getElementById("deleteAll").onclick  = function() { // function that deletes item list with a checkbox marking them as done
     var countLi2 = 0; // used for idetentification of the List Element
-    console.log(countDelete)
     for (i = -1; i >= countDelete; --i) {  // for loop to iterate through the boxes i has to start at -1 because --1 will only be called after the first loop. This loop will look for checkboxes that are checked and thus marked as done
         countLi2 += 1; //counter for the current List Item
         var currentBox = document.getElementById(i.toString()); //variables that make it easier to work with the Checkbox or List Item elements in the loop

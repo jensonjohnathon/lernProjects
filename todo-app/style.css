@@ -1,3 +1,15 @@
 * {
     box-sizing: border-box;
 }
+
+ol {
+    background: #e1e1e1;
+    padding: 20px;
+    list-style-position: inside;
+  }
+
+ol li {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
