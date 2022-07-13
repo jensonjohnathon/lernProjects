@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <center><h1>Password Generator</h1></center>
+    </header>
+    <center>
+    <input id="password_length" type="range" list="tickmarks" min="4" max="16" step="4" value="8">
+    <datalist id="tickmarks">
+        <option value="4" label="4"></option>
+        <option value="8" label="8"></option>
+        <option value="12" label="12"></option>
+        <option value="16" label="16"></option>
+    </datalist>
+    <button id="generate">Generate</button>
+    <p id="password_text">Your new Password</p>
+    </center>
+</body>
+</html>
