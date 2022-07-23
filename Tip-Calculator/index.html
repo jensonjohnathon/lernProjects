@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <a>
+        <div id="inputText">
+            <label for="total">What's your total?</label>
+            <input type="text" id="uTotal" onkeyup="tipCalc()">
+            <input type="search" id="currencySelected" list="currencyList" placeholder="USD" value="EUR">
+            <datalist id="currencyList">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="KRW">KRW</option>
+            </datalist>
+        </div>
+        <br>
+        <button onclick="calcTipFactor(1)" class="button-35" role="button">I'm feeling generous</button>
+        <button onclick="calcTipFactor(2)" class="button-35" role="button">Back to Normal</button>
+        <button onclick="calcTipFactor(3)" class="button-35" role="button">Bad Service</button>
+    </a>
+    <a id="outputs">
+        <div>
+            <p id="inputError"></p>
+            <h3>Your tip is <span id="tipNum"></span>
+                <br>
+                So you have to pay <span id="calcTotal"></span> in total
+            </h3>
+        </div>
+    </a>
+</body>
+</html>
