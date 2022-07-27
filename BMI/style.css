@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#inputHeight {
+    display: inline-block;
+}
+
+#inputWeight {
+    display: inline-block;
+}
+
+#unitHeight{
+    display: inline-block;
+    margin-right:10px;
+}
+
+#unitWeight{
+    display: inline-block;
+    margin-right:10px;
+}
